@@ -10,13 +10,14 @@ def read_input(x):
     x = [int(x) for x in x]
     return x
 
+
 x = read_input("data/1-1.txt")
 "The Answer is: {}".format(sum(x))
 
 # Part 2.
 def repeats_twice(x):
     v, r = 0, []
-    for i in (x * 1000):
+    for i in x * 1000:
         v += i
         if v in r:
             break
